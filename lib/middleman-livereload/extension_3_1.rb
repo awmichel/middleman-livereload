@@ -84,7 +84,7 @@ module Middleman
 
         # Use the vendored livereload.js source rather than trying to get it from Middleman
         # https://github.com/johnbintz/rack-livereload#which-livereload-script-does-it-use
-        use ::Rack::LiveReload, port: js_port, host: js_host, no_swf: no_swf, source: :vendored, ignore: ignore
+        use ::Rack::LiveReload, port: js_port, host: js_host, no_swf: no_swf, source: :livereload, ignore: ignore
       end
     end
   end
